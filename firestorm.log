@@ -1,0 +1,413 @@
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fdfa416] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-7 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1081291198 wrapping com.mysql.cj.jdbc.ConnectionImpl@392d78e4] will not be managed by Spring
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01724eb3531f03b9(String)
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fdfa416]
+ERROR pool-1-thread-7 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01724eb3531f03b9', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63b9f021] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-9 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-9 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@932113355 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f0437f7] will not be managed by Spring
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01725a56aa752425(String)
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f7de73d] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-5 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-5 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1589605538 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01725572dc94185e(String)
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63b9f021]
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f7de73d]
+ERROR pool-1-thread-9 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01725a56aa752425', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR pool-1-thread-5 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01725572dc94185e', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-1 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-1 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3358ef2a] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-1 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-1 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@678017358 wrapping com.mysql.cj.jdbc.ConnectionImpl@b76edc5] will not be managed by Spring
+DEBUG pool-1-thread-1 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-1 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01725f206c282e7a(String)
+DEBUG pool-1-thread-1 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-1 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3358ef2a]
+ERROR pool-1-thread-1 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01725f206c282e7a', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-4 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-4 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@589fae7d] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-4 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-4 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@702937371 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-4 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-4 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726bf4222e375d(String)
+DEBUG pool-1-thread-4 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-4 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@589fae7d]
+ERROR pool-1-thread-4 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726bf4222e375d', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-3 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-3 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5988564b] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-3 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-3 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1329332011 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-3 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-3 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726d8900a137da(String)
+DEBUG pool-1-thread-3 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-3 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5988564b]
+ERROR pool-1-thread-3 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726d8900a137da', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@538db06e] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-7 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1217707081 wrapping com.mysql.cj.jdbc.ConnectionImpl@392d78e4] will not be managed by Spring
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726eda79b63cff(String)
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-2 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@538db06e]
+DEBUG pool-1-thread-2 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16616d88] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-2 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-2 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1813175058 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f0437f7] will not be managed by Spring
+DEBUG pool-1-thread-2 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-2 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726e1c26033abd(String)
+DEBUG pool-1-thread-2 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-2 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16616d88]
+ERROR pool-1-thread-7 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726eda79b63cff', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR pool-1-thread-2 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726e1c26033abd', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-10 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a8f3cf] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1765159719 wrapping com.mysql.cj.jdbc.ConnectionImpl@5e67f7a4] will not be managed by Spring
+DEBUG pool-1-thread-10 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-10 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726df558193a22(String)
+DEBUG pool-1-thread-10 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-10 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a8f3cf]
+ERROR pool-1-thread-10 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbGongGao_View.do?ggguid=2c9e8ac2724b46ba01726df558193a22', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbc97cf] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-5 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@94a3b63] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-9 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-5 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@252772590 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-9 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2119646234 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f0437f7] will not be managed by Spring
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=c59485fa-d27a-448f-a311-4b63ee16cb43(String)
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=c4c3448b-4279-49d5-8091-dbfad74926a5(String)
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@94a3b63]
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbc97cf]
+ERROR pool-1-thread-9 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=c4c3448b-4279-49d5-8091-dbfad74926a5', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR pool-1-thread-5 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=c59485fa-d27a-448f-a311-4b63ee16cb43', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-1 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-1 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d40cba4] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-1 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-1 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1632053997 wrapping com.mysql.cj.jdbc.ConnectionImpl@b76edc5] will not be managed by Spring
+DEBUG pool-1-thread-1 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-1 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=6d633b83-2ec1-4543-8268-4b332ae835ea(String)
+DEBUG pool-1-thread-1 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-1 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d40cba4]
+ERROR pool-1-thread-1 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=6d633b83-2ec1-4543-8268-4b332ae835ea', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-4 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-4 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7946cf01] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-4 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-4 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1662069644 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-4 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-4 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=0d7fbcda-82af-4800-ac4a-0cd7d3db44f9(String)
+DEBUG pool-1-thread-4 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-4 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7946cf01]
+ERROR pool-1-thread-4 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=0d7fbcda-82af-4800-ac4a-0cd7d3db44f9', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-3 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-3 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cc094be] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-3 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-3 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1818703207 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-3 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-3 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=3b3d42e5-751b-4ee3-8c9e-d4d0aafc8e3b(String)
+DEBUG pool-1-thread-3 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-3 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cc094be]
+ERROR pool-1-thread-3 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=3b3d42e5-751b-4ee3-8c9e-d4d0aafc8e3b', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1523c6b5] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-7 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-2 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@782482491 wrapping com.mysql.cj.jdbc.ConnectionImpl@392d78e4] will not be managed by Spring
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-2 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15a9ff9] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=26a90987-5bfc-40e0-8267-88eaffc16383(String)
+DEBUG pool-1-thread-2 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-2 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1545785269 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f0437f7] will not be managed by Spring
+DEBUG pool-1-thread-2 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-2 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=07d18205-15f4-467f-afe8-3809bef56c94(String)
+DEBUG pool-1-thread-7 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-7 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1523c6b5]
+DEBUG pool-1-thread-2 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-2 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15a9ff9]
+ERROR pool-1-thread-7 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=26a90987-5bfc-40e0-8267-88eaffc16383', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR pool-1-thread-2 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=07d18205-15f4-467f-afe8-3809bef56c94', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-10 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7224860d] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1548194294 wrapping com.mysql.cj.jdbc.ConnectionImpl@5e67f7a4] will not be managed by Spring
+DEBUG pool-1-thread-10 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-10 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=4bbf2fb4-7e26-4457-a2bd-8ebf0da8db1e(String)
+DEBUG pool-1-thread-10 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-10 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7224860d]
+ERROR pool-1-thread-10 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=4bbf2fb4-7e26-4457-a2bd-8ebf0da8db1e', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46f50dc8] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-5 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-5 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@572956764 wrapping com.mysql.cj.jdbc.ConnectionImpl@6e5ee0cd] will not be managed by Spring
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=fe3cea02-2adb-4ac9-8d27-2a142b8eb328(String)
+DEBUG pool-1-thread-5 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-5 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46f50dc8]
+ERROR pool-1-thread-5 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=fe3cea02-2adb-4ac9-8d27-2a142b8eb328', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@647f6a9e] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-9 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-9 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2062894440 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f0437f7] will not be managed by Spring
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=b5a7302b-a0cb-4a31-bcdc-4c63729bb758(String)
+DEBUG pool-1-thread-9 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-9 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@647f6a9e]
+ERROR pool-1-thread-9 us.codecraft.webmagic.Spider - process request Request{url='https://www.szjsjy.com.cn:8001/jyw/jyw/zbgs_View.do?Guid=b5a7302b-a0cb-4a31-bcdc-4c63729bb758', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-6 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-6 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4133e52d] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-6 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-6 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@175170677 wrapping com.mysql.cj.jdbc.ConnectionImpl@b76edc5] will not be managed by Spring
+DEBUG pool-1-thread-6 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-6 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: http://lhxq.szzfcg.cn/viewer.do?id=527934337(String)
+DEBUG pool-1-thread-6 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-6 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4133e52d]
+ERROR pool-1-thread-6 us.codecraft.webmagic.Spider - process request Request{url='http://lhxq.szzfcg.cn/viewer.do?id=527934337', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG pool-1-thread-8 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG pool-1-thread-8 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18a69920] was not registered for synchronization because synchronization is not active
+DEBUG pool-1-thread-8 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG pool-1-thread-8 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1695153548 wrapping com.mysql.cj.jdbc.ConnectionImpl@33d7e579] will not be managed by Spring
+DEBUG pool-1-thread-8 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==>  Preparing: SELECT DISTINCT * FROM source_url t WHERE t.`status`=0 AND t.xmmc IS NOT NULL AND t.BODY IS NOT NULL and wyljdz=? 
+DEBUG pool-1-thread-8 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - ==> Parameters: http://lhxq.szzfcg.cn/viewer.do?id=527872597(String)
+DEBUG pool-1-thread-8 cn.yd.crawler.dao.TenderDao.findGzByWyljdz - <==      Total: 1
+DEBUG pool-1-thread-8 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18a69920]
+ERROR pool-1-thread-8 us.codecraft.webmagic.Spider - process request Request{url='http://lhxq.szzfcg.cn/viewer.do?id=527872597', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at cn.yd.crawler.YourPipeline.mysqlPipeline.process(mysqlPipeline.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (e30b4291ace96f6d5129607ea2ff304e)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (5425eac2e3236aee69f7a4af0f2f217e)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (a65fc02af6100292c098632d50881890)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (c4bfc94a8643eb150d607301638ea413)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (5491a7541446a82536e0a848f4724ce4)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (1e798ff738ebacf56dfaa1af31ad1c58)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (8ebe86aa66f9f34dc6210b44972dbbff)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (d529dab7f982f9e47bcce36cf7368b77)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (a71102a9f7e204fb427d4d51292306f7)
+INFO scheduling-1 cn.yd.crawler.SeleniumDownloader.WebDriverPool - Quit webDriverChromeDriver: chrome on WINDOWS (f56c76ec226e274fb455481743e899fe)
+INFO scheduling-1 us.codecraft.webmagic.Spider - Spider www.baidu.com closed! 1983 pages downloaded.
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
